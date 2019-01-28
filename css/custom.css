@@ -1,0 +1,365 @@
+/* fontes da página */
+@font-face {
+  font-family: "Gotham";
+  src: url('../fonts/Gotham-Book.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url('../fonts/Gotham-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url('../fonts/Gotham-Light.ttf');
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url('../fonts/Gotham-Medium.ttf');
+  font-weight: 500;
+}
+
+/* corpo do site */
+body {
+  font-family: "Gotham";
+  background-color: #151515;
+}
+p{
+  margin: 0px;
+}
+header {
+  margin-top: 40px;
+}
+
+/* breadcrumb */
+.bread {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  margin: 0px;
+  padding-left: 0px;
+}
+#bread-1 a{
+  color: #727272;
+  font-size: 12px;
+}
+#bread-2 h1 {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 22px;
+  margin: 0px;
+}
+#seta-breadcrumb {
+  font-size: 15px;
+  margin: 0px 15px 5px 11px;
+}
+.dash-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* calendário */
+.calendar {
+  background-color: #333333;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 0px 22px;
+  border-radius: 30px;
+  justify-content: center;
+}
+.calendar p {
+  font-size: 12px;
+  margin: 0px;
+  color: #dddddd;
+  font-weight: 500;
+}
+#calendar-img {
+  margin-left: 30px;
+}
+
+/* frase de apoio superior do gráfico */
+.topo-apoio-grafico {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.titulo-apoio-grafico{
+  display: flex;
+  justify-content: flex-start;
+}
+#status-grafico {
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  margin: 0px;
+  margin-right: 20px;
+}
+#update-grafico {
+  font-size: 12px;
+  color: #999999;
+  margin: 0px;
+}
+
+/* Spans de legenda do gráfico */
+.span-apoio {
+  display: flex;
+  justify-content: flex-end;
+}
+.span-legenda{
+  display: flex;
+  align-items: center;
+}
+.span-legenda:not(:first-child){
+  margin-left: 40px;
+}
+#legenda-cor-cinza{
+  display: block;
+  width: 16px;
+  height: 4px;
+  background-color: #444444;
+}
+#legenda-cor-azul{
+  display: block;
+  width: 16px;
+  height: 4px;
+  background-color: #269fbd;
+}
+#legenda-cor-roxo{
+  display: block;
+  width: 16px;
+  height: 4px;
+  background-color: #7641cb;
+}
+.legenda-texto{
+  margin: 0px;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #d7d7d7;
+}
+
+/* gráfico maior  */
+.grafico {
+  width: 100%;
+  height: 320px;
+  background-color: #242424;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 30px;
+}
+#line-grafico{
+  width: 100%;
+  height: 85%;
+}
+
+/* graficos donutcharts */
+.flex-grafico {
+  display: flex;
+  justify-content: space-between;
+}
+.grafico-bloco {
+  height: 300px;
+  width: calc((100% - 40px) / 3);
+  border-radius: 8px;
+  background-color: #242424;
+  margin-bottom: 45px;
+  padding: 30px;
+}
+.titulo-grafico-redondo {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+.uptdate-grafico-bloco {
+  font-size: 12px;
+  color: #999999;
+}
+.grafico-redondo {
+  margin-top: 15px;
+  min-width: 177px;
+  height: 150px;
+}
+.donut{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+.donut p {
+    position: absolute;
+    margin: 0px;
+}
+.conteudo-bloco-redondo {
+  display: flex;
+  margin-top: 15px;
+
+}
+.titulo-apoio {
+  display: block;
+  font-size: 12px;
+  color: #999999;
+}
+.numero-apoio {
+  font-weight: lighter;
+  font-size: 16px;
+  color: #fff;
+}
+.box-por-cento {
+  font-size: 12px;
+  display: block;
+  color: #fff;
+  background-color: #606060;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+  width: 60px;
+  margin-top: 8px;
+  margin-bottom: 33px;
+}
+.seta-diferenca {
+  margin-right: 5px;
+}
+.botao-detalhe {
+  border:none;
+  width: 177px;
+  background: transparent;
+  font-size:12px;
+  color: #999999;
+  text-align: center;
+}
+.detalhe-icone {
+  margin-left: 5px;
+  position: relative;
+  top: 1px;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  align-items: center;
+}
+.contact-botao {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  height: 36px;
+  padding: 0px 116px;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 20px;
+}
+.contact a {
+  text-decoration: none;
+}
+#contact-frase{
+  margin: 0px;
+}
+.logo-rodape {
+  height: 170px;
+  background-color: #111111;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-rodape img:nth-child(2){
+  display: none;
+}
+
+/* classes para o js */
+
+.verde-por-cento{
+  background-color: #3ab34d;
+}
+.vermelho-por-cento {
+  background-color: #f94531;
+}
+
+/* css responsivo */
+@media only screen and (max-width: 991px) {
+  header{
+    margin-top: 20px;
+  }
+
+  #bread-1 {
+    display: none;
+  }
+  #seta-breadcrumb {
+    display: none;
+  }
+  .dash-top {
+    align-items: center;
+  }
+  .calendar{
+    margin:0px;
+    padding: 0px 12px;
+    border-radius: 100px;
+  }
+  .calendar p{
+    display: none;
+  }
+  #calendar-img {
+    margin-left: 0px;
+  }
+  .topo-apoio-grafico {
+    display: block;
+  }
+  .titulo-apoio-grafico {
+    display: block;
+  }
+  .grafico {
+    background-color: #151515;
+    padding: 10px 0px;
+    margin-top: 0px;
+    height: 250px;
+  }
+
+  #line-grafico {
+    width: 100%;
+    height: 150px;
+  }
+
+  .grafico-bloco {
+    width: 100%;
+
+  }
+
+  .conteudo-bloco-redondo {
+    display: flex;
+    justify-content: center;
+  }
+  .grafico-bloco:not(:last-child){
+    margin-bottom: 15px;
+  }
+  .span-apoio {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
+  .flex-grafico {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-botao {
+    padding: 0px 85px;
+  }
+
+  .logo-rodape{
+    margin-top: 30px;
+  }
+
+  .logo-rodape img:nth-child(1){
+    display: none;
+  }
+  .logo-rodape img:nth-child(2){
+    display: block;
+  }
+}

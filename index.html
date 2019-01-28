@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/pmfavicon.png">
+    <title>Pmweb, a Wunderman company</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="dash-top">
+        <ul class="bread">
+          <li id="bread-1"><a href="#">Pmweb</a></li>
+            <img id="seta-breadcrumb" src="images/arrow.png">
+          <li id="bread-2"><h1>Health Status</h1></li>
+        </ul>
+        <div class="calendar">
+          <p>24 Ago 2016 - 22 Set 2016</p>
+          <img id="calendar-img" src="images/calendario.png">
+        </div>
+      </header>
+      <div class="grafico">
+        <div class="topo-apoio-grafico">
+          <div class="titulo-apoio-grafico">
+            <h5 id="status-grafico">Status - Messages</h5>
+            <p id="update-grafico">Last Update: 27/06/2016 10:53:34</p>
+          </div>
+          <div class="span-apoio">
+            <div class="span-legenda">
+              <span id="legenda-cor-cinza"></span>
+              <p class="legenda-texto">Média</p>
+            </div>
+            <div class="span-legenda">
+              <span id="legenda-cor-azul"></span>
+              <p class="legenda-texto">Ontem</p>
+            </div>
+            <div class="span-legenda">
+              <span id="legenda-cor-roxo"></span>
+              <p class="legenda-texto">Hoje</p>
+            </div>
+          </div>
+
+        </div>
+        <div id="line-grafico"></div>
+      </div>
+      <div class="flex-grafico">
+        <div class="grafico-bloco campaigns">
+          <h3 class="titulo-grafico-redondo">Campaigns</h3>
+          <p class="uptdate-grafico-bloco">Last Update: 27/06/2016 10:53:34
+          <div class="conteudo-bloco-redondo">
+            <div class="grafico-redondo">
+              <div class="donut" id="numero-grafico-campanha" data-percent="99,07"><p>99,07%</p></div>
+            </div>
+            <div class="texto-bloco-redondo">
+              <span class="titulo-apoio">Inbound</span>
+              <span class="numero-apoio" id="numero-inbound-campanha">100.928</span>
+              <span class="box-por-cento" id="numero-porcento-campanha">
+                <i class="seta-diferenca fas fa-caret-up" id="seta-diferenca-campanha"></i>
+                <p>12%</p>
+              </span>
+              <span class="titulo-apoio">Outbound</span>
+              <span class="numero-apoio" id="numero-outbound-campanha">99.867</span>
+            </div>
+          </div>
+          <button class="botao-detalhe">ver detalhes
+            <i class="detalhe-icone fas fa-caret-right"></i>
+          </button>
+        </div>
+
+        <div class="grafico-bloco notification">
+          <h3 class="titulo-grafico-redondo">Notification</h3>
+          <p class="uptdate-grafico-bloco">Last Update: 27/06/2016 10:53:34
+          <div class="conteudo-bloco-redondo">
+            <div class="grafico-redondo">
+              <div class="donut" id="numero-grafico-notificacao" data-percent="80,6"><p>80,6%</p></div>
+            </div>
+            <div class="texto-bloco-redondo">
+              <span class="titulo-apoio" >Inbound</span>
+              <span class="numero-apoio" id="numero-inbound-notificacao">100.928</span>
+              <span class="box-por-cento" id="numero-porcento-notificacao">
+                <i class="fas fa-caret-up" id="seta-diferenca-notificacao"></i>
+                <p>12%</p>
+              </span>
+              <span class="titulo-apoio">Outbound</span>
+              <span class="numero-apoio" id="numero-outbound-notificacao">99.867</span>
+            </div>
+          </div>
+          <button class="botao-detalhe">ver detalhes
+            <i class="detalhe-icone fas fa-caret-right"></i>
+          </button>
+        </div>
+
+        <div class="grafico-bloco transaction">
+          <h3 class="titulo-grafico-redondo">Transaction</h3>
+          <p class="uptdate-grafico-bloco">Last Update: 27/06/2016 10:53:34
+          <div class="conteudo-bloco-redondo">
+            <div class="grafico-redondo">
+              <div class="donut" data-percent="100" id="numero-grafico-transaction"><p>100%</p></div>
+            </div>
+            <div class="texto-bloco-redondo">
+              <span class="titulo-apoio">Inbound</span>
+              <span class="numero-apoio" id="numero-inbound-transaction">100.928</span>
+              <span class="box-por-cento" id="numero-porcento-transaction">
+                <i class="fas fa-caret-up" id="seta-diferenca-transaction"></i>
+                12%
+              </span>
+              <span class="titulo-apoio">Outbound</span>
+              <span class="numero-apoio" id="numero-outbound-transaction">99.867</span>
+            </div>
+          </div>
+          <button class="botao-detalhe">ver detalhes
+            <i class=" detalhe-icone fas fa-caret-right"></i>
+          </button>
+        </div>
+
+        </div>
+      <div class="contact">
+        <a href="#">
+          <div class="contact-botao">
+            <p id="contact-frase">Entrar em contato</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <footer class="logo-rodape">
+      <img src="images/logo.png">
+      <img src="images/logo-footer-mobile.png">
+    </footer>
+    <div class="modal">
+      <div class="modal-titulo">
+        <h2>Entre em contato</h2>
+        <div id="fecha-modal">
+        </div>
+      </div>
+      <div class="conteudo-modal">
+        <label id="nome-modal"></label>
+        <input type="text" name="nome" value="">
+        <label id="email-modal"></label>
+        <input type="text" name="email" value="">
+        <label id="mensagem-modal"></label>
+        <textarea></textarea>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>
