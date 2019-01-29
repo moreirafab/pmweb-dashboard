@@ -69,7 +69,14 @@ header {
   padding: 0px 22px;
   border-radius: 30px;
   justify-content: center;
+  cursor: pointer;
+  transition: 0.4s;
 }
+
+.calendar:hover{
+  background-color: #2c2c2c;
+}
+
 .calendar p {
   font-size: 12px;
   margin: 0px;
@@ -167,7 +174,13 @@ header {
   background-color: #242424;
   margin-bottom: 45px;
   padding: 30px;
+  transition: 0.2s;
 }
+
+.grafico-bloco:hover {
+  transform: translateY(-5px);
+}
+
 .titulo-grafico-redondo {
   font-size: 12px;
   font-weight: 500;
@@ -234,6 +247,7 @@ header {
   font-size:12px;
   color: #999999;
   text-align: center;
+  cursor: pointer;
 }
 .detalhe-icone {
   margin-left: 5px;
@@ -255,7 +269,13 @@ header {
   color: #fff;
   font-size: 13px;
   border-radius: 20px;
+  transition: 0.3s;
 }
+
+.contact-botao:hover {
+  transform: scale(1.1);
+}
+
 .contact a {
   text-decoration: none;
 }
@@ -283,6 +303,173 @@ header {
   background-color: #f94531;
 }
 
+/* modal */
+.modal-contato{
+  transition: 0.3s;
+  background-color: white;
+  width: 52%;
+  position: absolute;
+  margin: auto;
+  right: 0px;
+  left: 0px;
+  top: 80px;;
+}
+
+.modal-titulo h3{
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+
+}
+.modal-titulo{
+  padding: 40px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, #129a67, #1ec48f);
+}
+
+.conteudo-modal {
+  padding: 43px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.conteudo-modal input {
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+.campos-form-contato {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.campos-form-contato label{
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.camp-full {
+  width: 100%;
+}
+
+.camp-half{
+  width: 48%;
+}
+
+.anexa-arquivo {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.clique-aqui-anexo{
+  cursor: pointer;
+  color: #15b57a;
+  text-decoration: underline;
+}
+
+.input-size {
+ height: 40px;
+ width: 100%;
+}
+
+input:active,
+input:focus,
+input:active:focus,
+textarea:active,
+textarea:focus,
+textarea:active:focus{
+  outline: none;
+}
+
+#botao-anexa-arquivo{
+  display: none;
+}
+
+.padding-form {
+  padding: 12px;
+  font-size: 13px;
+  color: #767676;
+}
+
+#mensagem-modal {
+  border: 1px solid #cccccc;
+  height: 112px;
+  width: 100%;
+  border-radius: 20px;
+}
+.footer-modal {
+  width: 100%;
+}
+
+.enviar-form {
+  height: 40px;
+  width: 100%;
+  background-color: #15b57a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.enviar-form:hover {
+  background-color: #199f6d;
+}
+
+.enviar-form:active,
+.enviar-form:focus,
+.enviar-form:active:focus{
+  outline: none;
+}
+
+#fecha-modal{
+  cursor: pointer;
+}
+
+.fundo-preto{
+  transition: 0.3s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  background-color: #1c1c1c;
+  top: 0px;
+}
+
+/* classe para animações com js */
+
+.some-modal{
+  transform: translateY(40px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.aparece-modal {
+  transform: translateY(-40px);
+  opacity: 1;
+}
+
+
+.some-fundo-preto{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.aparece-fundo-preto{
+  opacity: 0.85;
+}
+
 /* css responsivo */
 @media only screen and (max-width: 991px) {
   header{
@@ -298,10 +485,11 @@ header {
   .dash-top {
     align-items: center;
   }
-  .calendar{
+  .calendar {
     margin:0px;
     padding: 0px 12px;
     border-radius: 100px;
+
   }
   .calendar p{
     display: none;

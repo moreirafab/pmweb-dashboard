@@ -173,7 +173,6 @@ function montaGraficoPrincipal(dadosGrafico){
     chart.draw(data, options);
   }
 }
-
 $.ajax({
   url:'http://pmweb.agencia.pmweb.com.br/teste-frontend/api/intranet/healthstatus.json',
   dataType:'json',
@@ -190,4 +189,27 @@ $.ajax({
 });
 $(window).resize(function(){
   montaGraficoPrincipal(dadosGrafico);
+});
+
+
+
+//modal js
+
+$(document).ready(function () {
+        $('#data-nasc-modal').mask('00/00/0000', {reverse: true});
+    });
+
+
+$('#fecha-modal').click(function() {
+  $('.modal-contato').addClass('some-modal');
+  $('.fundo-preto').addClass('some-fundo-preto');
+  $('.modal-contato').removeClass('aparece-modal');
+  $('.fundo-preto').removeClass('aparece-fundo-preto');
+});
+
+$('.contact-botao').click(function() {
+  $('.modal-contato').addClass('aparece-modal');
+  $('.fundo-preto').addClass('aparece-fundo-preto');
+  $('.modal-contato').removeClass('some-modal');
+  $('.fundo-preto').removeClass('some-fundo-preto');
 });
