@@ -472,10 +472,10 @@ textarea:active:focus{
 
 /* css responsivo */
 @media only screen and (max-width: 991px) {
+  /** topo **/
   header{
     margin-top: 20px;
   }
-
   #bread-1 {
     display: none;
   }
@@ -485,6 +485,8 @@ textarea:active:focus{
   .dash-top {
     align-items: center;
   }
+
+  /** Botão calendário **/
   .calendar {
     margin:0px;
     padding: 0px 12px;
@@ -497,6 +499,8 @@ textarea:active:focus{
   #calendar-img {
     margin-left: 0px;
   }
+
+  /** Gráficos home **/
   .topo-apoio-grafico {
     display: block;
   }
@@ -536,18 +540,27 @@ textarea:active:focus{
     flex-direction: column;
     align-items: center;
   }
-  .contact-botao {
-    padding: 0px 85px;
-  }
 
+  /** Rodapé **/
   .logo-rodape{
     margin-top: 30px;
   }
-
   .logo-rodape img:nth-child(1){
     display: none;
   }
   .logo-rodape img:nth-child(2){
     display: block;
+  }
+
+  /** Modal contato **/
+  .modal-contato{
+    width: 100%;
+    top: 40px;
+  }
+  .camp-half{
+    width: 100%;
+  }
+  .contact-botao {
+    padding: 0px 85px;
   }
 }
